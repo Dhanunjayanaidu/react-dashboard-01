@@ -5,16 +5,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>New React dashboard for practice 01</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>Hello React Js</h2>
+        <p>Here is the practice react js dashboard from Dhanunjay</p>
       </header>
     </div>
   );
