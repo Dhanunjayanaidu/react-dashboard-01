@@ -8,15 +8,20 @@ function Dashboard() {
       <Container className="pb-5 pt-3">
         <Row>
           <Col>
-            <h2 className="mt-4 pt-1">Dashboard page</h2>
+            {/* <h2 className="mt-4 pt-1">Dashboard page</h2>
             <p className="mb-3">
               Here is the practice react js dashboard from Dhanunjay
-            </p>
+            </p> */}
 
             <p>
               <Link to="/">Home</Link>
+              <Link to="home">Dashboard</Link>
               <Link to="comments">Comments</Link>
               <Link to="posts">Posts</Link>
+              <Link to="albums">Albums</Link>
+              <Link to="photos">Photos</Link>
+              <Link to="todos">ToDos</Link>
+              <Link to="users">Users</Link>
             </p>
 
             <h5>Dashboard Header content</h5>
