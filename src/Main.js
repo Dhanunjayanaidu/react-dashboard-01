@@ -1,7 +1,7 @@
 import React from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
+import { Route, Routes } from "react-router-dom";
+// import Header from "./Components/Header/Header";
+// import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 import About from "./Pages/About/About";
@@ -10,11 +10,11 @@ import Comments from "./Pages/Dashboard/Comments/Comments";
 import Posts from "./Pages/Dashboard/Posts/Posts";
 
 function Main() {
-  const location = useLocation();
+  // const location = useLocation();
   return (
     <>
       {/* <Header /> */}
-      {location.pathname !== "/dashboard" && <Header />}
+      {/* {location.pathname !== "/dashboard" && <Header />} */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<PageNotFound />} />
@@ -26,7 +26,7 @@ function Main() {
       </Routes>
 
       {/* <Footer /> */}
-      {location.pathname !== "/dashboard" && <Footer />}
+      {/* {location.pathname !== "/dashboard" && <Footer />} */}
     </>
   );
 }

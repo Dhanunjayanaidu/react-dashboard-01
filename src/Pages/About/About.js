@@ -1,9 +1,12 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
 
 function About() {
   return (
     <>
+      <Header />
       <Container className="pb-5 pt-3">
         <Row>
           <Col>
@@ -14,6 +17,7 @@ function About() {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
 
 function Dashboard() {
@@ -14,6 +14,7 @@ function Dashboard() {
             </p>
 
             <p>
+              <Link to="/">Home</Link>
               <Link to="comments">Comments</Link>
               <Link to="posts">Posts</Link>
             </p>
