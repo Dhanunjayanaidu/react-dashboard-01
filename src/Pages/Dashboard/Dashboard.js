@@ -32,7 +32,7 @@ const items = [
     "MAIN",
     "grp1",
     null,
-    [getItem("Dashboard", "/dashboard", <HomeOutlined />)],
+    [getItem("Dashboard", "home", <HomeOutlined />)],
     "group"
   ),
   getItem(
@@ -47,29 +47,29 @@ const items = [
     "grp3",
     null,
     [
-      getItem("Components", "sub2", <DatabaseOutlined />, [
-        getItem("Option 5", "/option-five"),
+      getItem("Comments", "sub2", <DatabaseOutlined />, [
+        getItem("Comments Page", "comments"),
         getItem("Option 6", "/option-six"),
         getItem("Submenu", "sub3", null, [
           getItem("Option 7", "7"),
           getItem("Option 8", "8"),
         ]),
       ]),
-      getItem("Elements", "sub4", <InboxOutlined />, [
-        getItem("Option 9", "9"),
-        getItem("Option 10", "10"),
-        getItem("Option 11", "11"),
-        getItem("Option 12", "12"),
+      getItem("Posts Set", "sub4", <InboxOutlined />, [
+        getItem("Posts Page 1", "posts"),
+        getItem("Posts Page 2", "10"),
+        getItem("Posts Page 4", "11"),
+        getItem("Posts Page 4", "12"),
       ]),
     ],
     "group"
   ),
-  getItem("Navigation One", "sub1", <MailOutlined />, [
+  getItem("Albums Set", "sub1", <MailOutlined />, [
     getItem(
       "Item 1",
       "g1",
       null,
-      [getItem("Option 1", "1"), getItem("Option 2", "2")],
+      [getItem("Albums Page 1", "albums"), getItem("Albums Page 2", "2")],
       "group"
     ),
     getItem(
@@ -89,7 +89,21 @@ const items = [
     "PAGES",
     "grp5",
     null,
-    [getItem("Pages", "13", <GiftOutlined />), getItem("Option 14", "14")],
+    [
+      getItem("Photos Page", "photos", <GiftOutlined />),
+      getItem("Todos", "todos", <GiftOutlined />),
+    ],
+    "group"
+  ),
+
+  getItem(
+    "Profile",
+    "grp5",
+    null,
+    [
+      getItem("Users Page", "users", <GiftOutlined />),
+      getItem("Maps", "maps", <GiftOutlined />),
+    ],
     "group"
   ),
 ];
@@ -136,6 +150,7 @@ function Dashboard() {
           <div className="menuSet" />
 
           <Menu
+            className="py-3"
             defaultSelectedKeys={["1"]}
             // defaultOpenKeys={["sub1"]}
             mode="inline"
@@ -180,7 +195,7 @@ function Dashboard() {
               borderRadius: borderRadiusLG,
             }}
           >
-            <p>
+            {/* <p>
               <Link to="/">Home</Link>
               <Link to="home">Dashboard</Link>
               <Link to="comments">Comments</Link>
@@ -192,7 +207,7 @@ function Dashboard() {
             </p>
 
             <h5>Dashboard Header content</h5>
-            <h6>sidebar content for Dashboard</h6>
+            <h6>sidebar content for Dashboard</h6> */}
             <Outlet />
           </Content>
         </Layout>
