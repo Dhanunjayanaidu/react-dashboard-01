@@ -8,7 +8,7 @@ function Home() {
     <>
       <Header />
       <header className="App-header">
-        <h2 className="mt-4 pt-1">Home page React Bootstrap</h2>
+        <h2 className="">Home page React Bootstrap</h2>
         <p className="mb-3">
           Here is the practice react js dashboard from Dhanunjay
         </p>

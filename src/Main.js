@@ -19,7 +19,7 @@ function Main() {
   return (
     <>
       {/* <Header /> */}
-      {/* {location.pathname !== "/dashboard" && <Header />} */}
+      {/* {location.pathname !== "/dashboard/home" && <Header />} */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<PageNotFound />} />

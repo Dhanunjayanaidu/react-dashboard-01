@@ -119,49 +119,23 @@ function Dashboard() {
   } = theme.useToken();
   return (
     <>
-      <Container fluid className="pb-5 pt-3 d-none">
-        <Row>
-          <Col>
-            {/* <h2 className="mt-4 pt-1">Dashboard page</h2>
-            <p className="mb-3">
-              Here is the practice react js dashboard from Dhanunjay
-            </p> */}
-
-            <p>
-              <Link to="/">Home</Link>
-              <Link to="home">Dashboard</Link>
-              <Link to="comments">Comments</Link>
-              <Link to="posts">Posts</Link>
-              <Link to="albums">Albums</Link>
-              <Link to="photos">Photos</Link>
-              <Link to="todos">ToDos</Link>
-              <Link to="users">Users</Link>
-            </p>
-
-            <h5>Dashboard Header content</h5>
-            <h6>sidebar content for Dashboard</h6>
-            <Outlet />
-          </Col>
-        </Row>
-      </Container>
-
       <Layout>
         <Sider trigger={null} collapsible collapsed={collapsed}>
-          <div className="menuSet" />
+          <div className='menuSet' />
 
           <Menu
-            className="py-3"
-            defaultSelectedKeys={["1"]}
+            className='py-3'
+            defaultSelectedKeys={['1']}
             // defaultOpenKeys={["sub1"]}
-            mode="inline"
-            theme="dark"
+            mode='inline'
+            theme='dark'
             // inlineCollapsed={collapsed}
             items={items}
             // onClick={(info) => {
             //   console.log(info.key);
             // }}
             onClick={({ key }) => {
-              if (key === "/") {
+              if (key === '/') {
               } else {
                 navigate(key);
               }
@@ -176,38 +150,25 @@ function Dashboard() {
             }}
           >
             <Button
-              type="text"
+              type='text'
               icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
               onClick={() => setCollapsed(!collapsed)}
               style={{
-                fontSize: "16px",
+                fontSize: '16px',
                 width: 64,
                 height: 64,
               }}
             />
           </Header>
           <Content
+            className='m-4 p-4 shadow-sm'
             style={{
-              margin: "24px 16px",
-              padding: 24,
               minHeight: 280,
               background: colorBgContainer,
               borderRadius: borderRadiusLG,
             }}
           >
-            {/* <p>
-              <Link to="/">Home</Link>
-              <Link to="home">Dashboard</Link>
-              <Link to="comments">Comments</Link>
-              <Link to="posts">Posts</Link>
-              <Link to="albums">Albums</Link>
-              <Link to="photos">Photos</Link>
-              <Link to="todos">ToDos</Link>
-              <Link to="users">Users</Link>
-            </p>
-
-            <h5>Dashboard Header content</h5>
-            <h6>sidebar content for Dashboard</h6> */}
+            
             <Outlet />
           </Content>
         </Layout>

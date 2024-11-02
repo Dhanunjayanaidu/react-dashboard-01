@@ -4,10 +4,10 @@ import { Col, Container, Row } from "react-bootstrap";
 function Photos() {
   return (
     <>
-      <Container className="pb-5 pt-3">
+      <Container className="">
         <Row>
           <Col>
-            <h2 className="mt-4 pt-1">Photos page</h2>
+            <h2 className="">Photos page</h2>
             <p className="mb-3">
               Here is the practice react js dashboard from Dhanunjay
             </p>
